@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A simple todo list made for an assignment in the rocketseat course",
-  "homepage": "todo.sumserver.xyz",
+  "homepage": "https://sum117.github.io/todo-list/",
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "João Victor Caliman (sum117)",
     "email": "jvcaliman@hotmail.com",
@@ -14,6 +17,7 @@
     "lint": "npx eslint . --ext .ts,.tsx --fix && npx prettier --write .",
     "dev": "vite",
     "build": "tsc && vite build",
+    "publish": "npm run build && gh-pages -d dist -m \"Deploying to gh-pages\" -f",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -34,9 +38,10 @@
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.0",
     "typescript": "^4.9.4",
     "vite": "^4.0.0",
-    "vite-tsconfig-paths": "^4.0.3",
-    "husky": "^8.0.0"
+    "vite-tsconfig-paths": "^4.0.3"
   }
 }

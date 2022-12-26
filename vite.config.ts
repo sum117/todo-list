@@ -15,5 +15,6 @@ export default defineConfig({
     modules: {
       localsConvention: "camelCase"
     }
-  }
+  },
+  base: "/todo-list"
 });
