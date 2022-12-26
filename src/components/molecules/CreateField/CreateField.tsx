@@ -17,11 +17,9 @@ export function CreateField({ onTaskCreate }: CreateFieldProps): JSX.Element {
     setValue("");
   };
   return (
-    <div className={styles.createFieldContainer}>
+    <form className={styles.createFieldContainer} onSubmit={handleTaskCreate}>
       <Input value={value} onInput={handleUserInput} />
-      <Button variant="createButton" onClick={handleTaskCreate}>
-        Criar
-      </Button>
-    </div>
+      <Button variant="createButton">Criar</Button>
+    </form>
   );
 }

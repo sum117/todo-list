@@ -10,6 +10,7 @@ export function Input({ value, onInput }: InputProps): JSX.Element {
     <input
       type="text"
       value={value}
+      required
       onInput={onInput}
       className={styles.input}
       placeholder="Adicione uma nova tarefa"
