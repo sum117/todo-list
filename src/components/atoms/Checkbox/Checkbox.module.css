@@ -24,11 +24,11 @@
 }
 
 .container:hover input ~ .checkbox {
-  border-color: var(--blue-dark);
+  border-color: var(--purple);
 }
 .container:hover input:checked ~ .checkbox {
-  background-color: var(--blue);
-  border-color: var(--blue);
+  background-color: var(--purple);
+  border-color: var(--purple);
 }
 
 .checkbox:after {
@@ -42,8 +42,8 @@
 }
 
 .container input:checked ~ .checkbox {
-  background-color: var(--blue-dark);
-  border-color: var(--blue-dark);
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
 }
 
 .container .checkbox:after {
