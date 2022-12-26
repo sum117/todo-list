@@ -12,7 +12,16 @@ export default defineConfig({
       exportAsDefault: true
     }),
     VitePWA({
-      registerType: "autoUpdate"
+      registerType: "autoUpdate",
+      manifest: {
+        icons: [
+          {
+            src: "rocket.png",
+            sizes: "192x192",
+            type: "image/png"
+          }
+        ]
+      }
     })
   ],
   css: {
