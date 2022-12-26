@@ -63,7 +63,7 @@ export function App(): JSX.Element {
                 onTaskCheck={checkTask}
                 checked={task.checked}
                 description={task.description}
-                key={index}
+                key={task.id}
                 onDeleteTask={deleteTask}
               />
             ))}
