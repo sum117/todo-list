@@ -53,7 +53,8 @@ export function App(): JSX.Element {
             </p>
 
             <p className={styles.counter}>
-              <b>Tarefas concluídas</b> <span>{checkedTasks.length}</span>
+              <b>Concluídas</b>{" "}
+              <span>{`${checkedTasks.length} de ${tasks.length}`}</span>
             </p>
           </div>
           {hasTasks &&

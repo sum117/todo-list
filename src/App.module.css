@@ -37,12 +37,17 @@ main {
   gap: 0.5rem;
 }
 
+.counter:nth-last-child(1) {
+  color: var(--purple);
+}
+
 .counter span {
   color: var(--gray-200);
   background-color: var(--gray-400);
-  width: 1.5625rem;
-  height: 1.1875rem;
+  padding: 0.125rem 0.5rem;
   border-radius: 62.4375rem;
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 
 .empty {
